@@ -16,4 +16,4 @@ A list of my uploaded written code:
             }
           })
          ```
-      - Link to work: [Slide Show] (/SlideShowEnhancement.java).
+     - Link to work: [Slide Show] (/SlideShowEnhancement.java).
