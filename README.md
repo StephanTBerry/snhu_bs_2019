@@ -4,7 +4,7 @@
 
 A list of my uploaded written code:
 
-1. [slideshow.java](../master/SlideShowEnhancement.java)
+1. [slideshow.java](../SlideShowEnhancement.java)
     - This shows some basic framework in Java and some lightweight tools. 
     - Example of some of the code from that:
         - ```java
