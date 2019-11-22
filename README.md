@@ -5,4 +5,4 @@
 A list of my uploaded written code:
 
 - slideshow.java
-** This shows some basic framework in Java and some lightweight tools. 
+-- This shows some basic framework in Java and some lightweight tools. 
