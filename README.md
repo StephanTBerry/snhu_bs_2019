@@ -7,7 +7,7 @@ A list of my uploaded written code:
 1. slideshow.java
   - This shows some basic framework in Java and some lightweight tools. 
   - Example of some of the code from that:
-    - ```
+    - ```java
       private String getResizeIcon(int i) {
       String image = "<html><body><img width= '800' height='500' src='/resources/%s'</body></html>"; 
       images.forEach(name -> {
