@@ -4,4 +4,6 @@ description: This page is designed to hold my portfolio for my BS in Computer Sc
 author :
   name : Stephan Berry
   email : stephan.berry@gmail.com
-  github : sberry
+  github : stephantberry
+production_url : https://stephantberry.github.io/snhu_bs_2019
+BASE_PATH: https://stephantberry.github.io/snhu_bs_2019
