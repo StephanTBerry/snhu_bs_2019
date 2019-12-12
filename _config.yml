@@ -1,3 +1,7 @@
 theme: jekyll-theme-modernist
 title: Welcome to StephanTBerry's homepage.
 description: This page is designed to hold my portfolio for my BS in Computer Science. Please feel free to bookmark it for any project updates your are interested in following.
+author :
+  name : Stephan Berry
+  email : stephan.berry@gmail.com
+  github : sberry
