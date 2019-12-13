@@ -1,2 +1,2 @@
 body {background-color: lightblue;}
-div.aboutMe {border: 1px solid powderblue;}
+#aboutMe {border: 1px solid powderblue; width: 50%;}
