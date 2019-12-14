@@ -9,3 +9,4 @@ div#aboutMeSection {width: 100%; text-align: center; -moz-opacity:1.0; filter:al
 h1, h3 {text-align: center;}
 .codeClips {width: 100%;}
 pre { overflow: hidden; resize: horizontal; min-width: 100%;}
+figure { display: inline-block; margin-top: 1em; margin-bottom: 1em; margin-left: 40px; margin-right: 40px; }
