@@ -4,7 +4,6 @@ td#aboutMeData, td#imageMeData {border: 1px solid black;}
 .brBlk { border: 1px solid black; }
 .bgLb { background-color: lightblue; }
 .bgImg {background-image: url("../pics/uss-constitution_pic.jpg"); -moz-opacity:0.4; filter:alpha(opacity=40); opacity: 0.5;}
-body {background-color: lightblue;}
 div#aboutMeSection {width: 100%; text-align: center;}
 td#aboutMeData, td#imageMeData {border: 1px solid black;}
 .brRed { border: 1px solid red; }
