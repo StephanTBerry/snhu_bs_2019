@@ -61,7 +61,9 @@ AS $function$
    
 BEGIN
         PERFORM table_name FROM information_schema.columns 
-           WHERE table_schema = lower(p_schema_name) AND table_name = lower(p_table_name) AND column_name = lower(p_column_name);
+           WHERE table_schema = lower(p_schema_name) 
+           AND table_name = lower(p_table_name) 
+           AND column_name = lower(p_column_name);
         IF NOT FOUND THEN
             RETURN FALSE;
         ELSE
@@ -103,8 +105,12 @@ DECLARE
     -- INSERT INTO person(first_name, last_name) VALUES ('Stephan', 'Berry');
 
     -- Alternate method of using an Insert is with a statement
-    INSERT INTO messaging.person(first_name, last_name) SELECT 'Stephan', 'Berry' WHERE messaging.person NOT EXISTS(SELECT 1 FROM messaging.person WHERE first_name='Stephan' AND last_name='Berry');
-    -- This method makes this a rerunable section of code. It will only insert if that does not currently exist. 
+    INSERT INTO messaging.person(first_name, last_name) 
+    SELECT 'Stephan', 'Berry' 
+    WHERE messaging.person 
+    NOT EXISTS(SELECT 1 FROM messaging.person WHERE first_name='Stephan' AND last_name='Berry');
+    -- This method makes this a rerunable section of code. 
+    -- It will only insert if that does not currently exist. 
 
     -- Second task: Alter table and add a new column to Person.
     -- Lets wrap this in a check statement to ensure if that column exists or not. 
@@ -114,7 +120,8 @@ DECLARE
 
     -- Added in a column for person age, and made it required. 
 
-    -- Third task: Update some records in the Person table. Need to add in data for the new column.
+    -- Third task: Update some records in the Person table. 
+    -- Need to add in data for the new column.
     UPDATE messaging.person SET age=29 WHERE person_id=1;
     UPDATE messaging.person SET age=31 WHERE person_id=2;
     UPDATE messaging.person SET age=45 WHERE person_id=3;
@@ -135,7 +142,8 @@ DECLARE
       ALTER TABLE messaging.contact_list ADD COLUMN favorite VARCHAR(10);
     END IF;
 
-    -- Sixth task: Update the table contact list so everyones fav is Micheal Phelps(contact ID = 1) and fav='y'.
+    -- Sixth task: Update the table contact list so everyones fav is Micheal Phelps(contact ID = 1) 
+    -- and fav='y'.
     UPDATE messaging.contact_list SET favorite='y' WHERE contact_id=1;
 
     -- Setting all persons whom have Mr. Phelps as a contact to their fav.
@@ -145,7 +153,8 @@ DECLARE
 
     -- Updated all other records in this table to now show a not fav.
 
-    -- Eighth task: Need to add in 3 new records to the Contact list, utilizing all columns and myself as a list member.
+    -- Eighth task: Need to add in 3 new records to the Contact list, 
+    -- utilizing all columns and myself as a list member.
     INSERT INTO messaging.contact_list (person_id, contact_id, favorite) 
     VALUES
     (6,7,'n'),
@@ -196,8 +205,14 @@ DECLARE
 
     -- Inserted new rows of message to image links with a input of one message having multiple images.
 
-    -- Thirteenth task: Find all messages Phelps sent with columns: Sender (first name, last name), Reciever (first , last name), message ID, Message and message timestamp.
-    SELECT p1.first_name AS "Sender first name", p1.last_name AS "Sender last name", p2.first_name AS "Receiver first name", p2.last_name AS "Receiver last name",
+    -- Thirteenth task: Find all messages Phelps sent with columns: 
+    -- Sender (first name, last name),
+    -- Reciever (first , last name), 
+    -- message ID, Message and message timestamp.
+    SELECT p1.first_name AS "Sender first name", 
+    p1.last_name AS "Sender last name", 
+    p2.first_name AS "Receiver first name", 
+    p2.last_name AS "Receiver last name",
            m.message_id AS "message id" , m.message, m.send_datetime AS "Message sent" 
            FROM messaging.person p1 
            JOIN messaging.person p2 ON p1.person_id != p2.person_id
@@ -206,8 +221,12 @@ DECLARE
 
     -- The select statement generates a list or return of only Michael Phelps messages out to the receiver.
 
-    -- Fourteenth task: Find the number of messages sent by every person. Use columns Count of messages, person id, first name and last name.
-    SELECT count(message_id)AS "Count of messages", p.person_id AS "Person ID", p.first_name AS "First Name", p.last_name AS "Last Name" 
+    -- Fourteenth task: Find the number of messages sent by every person. 
+    -- Use columns Count of messages, person id, first name and last name.
+    SELECT count(message_id)AS "Count of messages", 
+    p.person_id AS "Person ID", 
+    p.first_name AS "First Name", 
+    p.last_name AS "Last Name" 
     FROM messaging.person p 
     JOIN messaging.message m ON m.sender_id = p.person_id
     WHERE m.receiver_id IS NOT NULL
