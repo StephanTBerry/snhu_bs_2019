@@ -41,10 +41,9 @@
 			<table class="codeClips brBlk">
 				<tr>
 					<th>A Slide Show UI using a light weight Java framework</th>
-					<th>One of the methods to capture images></th>
 				</tr>
 				<tr>
-					<td>
+					<td class="brRed">
 						<figure>
 							<pre>
 								<code>
@@ -65,23 +64,29 @@
 							</pre>
 						</figure>
 					</td>
-					<td>
-						<p>
-							<span>
-
-							/**
-							 * Method to get the images
-							 */
-							private String getResizeIcon(int i) {
-								String image = "<\html><\body><\img width= '800' height='500' src='/resources/%s'<\/body><\/html>"; 
-								images.forEach(name -> {
-									if (name.indexOf(String.valueOf(i)) != -1) {
-										return String.format(image,name);
+				</tr>
+				<tr>
+					<th>One of the methods to capture images></th>
+				</tr>
+				<tr>
+					<td class="brRed">
+						<figure>
+							<pre>
+								<code>
+									/**
+									 * Method to get the images
+									 */
+									private String getResizeIcon(int i) {
+										String image = "<\html><\body><\img width= '800' height='500' src='/resources/%s'<\/body><\/html>"; 
+										images.forEach(name -> {
+											if (name.indexOf(String.valueOf(i)) != -1) {
+												return String.format(image,name);
+											}
+										})
 									}
-								})
-							}
-						    </span>
-						</p>
+						        </code>
+						    </pre>
+						</figure>
 					</td>
 				</tr>
 			</table>
