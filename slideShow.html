@@ -38,45 +38,55 @@
 			</table>
 		</div>
 		<div>
-			<figure>
-			  <figcaption>A Slide Show UI using a light weight Java framework</figcaption>
-			  <pre>
-			    <code contenteditable spellcheck="false">
-			      /**
-				 * Launch the application.
-				 */
-				public static void main(String[] args) {
-					EventQueue.invokeLater(new Runnable() {
+			<table>
+				<tr>
+					<th>A Slide Show UI using a light weight Java framework</th>
+					<th>One of the methods to capture images></th>
+				</tr>
+				<tr>
+					<td>
+						<figure>
+						  <pre>
+						    <code contenteditable spellcheck="false">
+						      /**
+							 * Launch the application.
+							 */
+							public static void main(String[] args) {
+								EventQueue.invokeLater(new Runnable() {
 
-						@Override
-						public void run() {
-							SlideShow ss = new SlideShow();
-							ss.setVisible(true);
-						}
-					});
-				}
-				</code>
-			</pre>
-		</figure>
-		<figure>
-			<figurecaption>One of the methods to capture images</figurecaption>
-			<pre>
-				<code>
+									@Override
+									public void run() {
+										SlideShow ss = new SlideShow();
+										ss.setVisible(true);
+									}
+								});
+							}
+							</code>
+						</pre>
+					</figure>
+				</td>
+				<td>
+					<figure>
+						<pre>
+							<code>
 
-				/**
-				 * Method to get the images
-				 */
-				private String getResizeIcon(int i) {
-					String image = "<\html><\body><\img width= '800' height='500' src='/resources/%s'<\/body><\/html>"; 
-					images.forEach(name -> {
-						if (name.indexOf(String.valueOf(i)) != -1) {
-							return String.format(image,name);
-						}
-					})
-				}
-			    </code>
-			  </pre>
-			</figure>
+							/**
+							 * Method to get the images
+							 */
+							private String getResizeIcon(int i) {
+								String image = "<\html><\body><\img width= '800' height='500' src='/resources/%s'<\/body><\/html>"; 
+								images.forEach(name -> {
+									if (name.indexOf(String.valueOf(i)) != -1) {
+										return String.format(image,name);
+									}
+								})
+							}
+						    </code>
+					    </pre>
+					</figure>
+				</td>
+			</tr>
+		</table>
 		</div>
 	</body>
 	<footer><button onclick="history.back()">Back</button></footer>
