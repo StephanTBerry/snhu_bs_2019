@@ -3,6 +3,7 @@ td#aboutMeData, td#imageMeData {border: 1px solid black;}
 .brRed { border: 1px solid red; }
 .brBlk { border: 1px solid black; }
 .bgBg {background-color: #98AFC7;} /*blue grey */
+.bgBl {background-color: #6960EC;} /*blue lotus */
 .bgLb { background-color: lightblue; }
 .bgImg {background-image: url("../pics/uss-constitution_pic.jpg"); -moz-opacity:0.4; filter:alpha(opacity=40); opacity: 0.5;}
 .centerText { text-align: center; }
