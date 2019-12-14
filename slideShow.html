@@ -6,7 +6,28 @@
 	</head>
 	<title>Java lightweight UI</title>
 	<body>
-		<div></div>
+		<div>
+			<figure>
+			  <figcaption>slideShow Java framework</figcaption>
+			  <pre>
+			    <code contenteditable spellcheck="false">
+			      /**
+				 * Launch the application.
+				 */
+				public static void main(String[] args) {
+					EventQueue.invokeLater(new Runnable() {
+
+						@Override
+						public void run() {
+							SlideShow ss = new SlideShow();
+							ss.setVisible(true);
+						}
+					});
+				}
+			    </code>
+			  </pre>
+			</figure>
+		</div>
 	</body>
 	<footer><button onclick="history.back()">Back</button></footer>
 </html>
