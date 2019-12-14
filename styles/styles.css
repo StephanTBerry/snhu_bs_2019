@@ -7,7 +7,7 @@ td#aboutMeData, td#imageMeData {border: 1px solid black;}
 .bgCb {background-color: #AFDCEC;} /*coral blue*/
 .bgFg {background-color: #99C68E;} /*frog green*/
 .bgLb { background-color: lightblue; }
-.bgImg {background-image: url("../pics/uss-constitution_pic.jpg"); -moz-opacity:0.6; filter:alpha(opacity=60); opacity: 0.6;}
+.bgImg {background-image: url("../pics/uss-constitution_pic.jpg"); -moz-opacity:0.6; filter:alpha(opacity=60); opacity: 0.6; background-repeat: no-repeat;}
 .centerText { text-align: center; }
 div#aboutMeSection {width: 100%; text-align: center; -moz-opacity:1.0; filter:alpha(opacity=100); opacity: 1.0;}
 h1, h3 {text-align: center;}
