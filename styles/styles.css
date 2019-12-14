@@ -1,5 +1,5 @@
 html, body {height: 100%;}
-body {background-image: url("../pics/uss-constitution_pic.jpg"); background-repeat: no-repeat; background-size: cover;}
+body {background-image: url("../pics/uss-constitution_pic.jpg"); background-repeat: no-repeat; background-size: cover; opacity: 0.5;}
 td#aboutMeData, td#imageMeData {border: 1px solid black;}
 .brRed { border: 1px solid red; }
 .brBlk { border: 1px solid black; }
