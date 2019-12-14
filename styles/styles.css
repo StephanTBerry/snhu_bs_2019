@@ -5,6 +5,8 @@ td#aboutMeData, td#imageMeData {border: 1px solid black;}
 .brBlk { border: 1px solid black; }
 .bgBg {background-color: #98AFC7;} /*blue grey */
 .bgBl {background-color: #6960EC;} /*blue lotus */
+.bgCb {background-color: #AFDCEC;} /*coral blue*/
+.bgFg {background-color: #99C68E;} /*frog green*/
 .bgLb { background-color: lightblue; }
 .bgImg {background-image: url("../pics/uss-constitution_pic.jpg"); -moz-opacity:0.4; filter:alpha(opacity=40); opacity: 0.5;}
 .centerText { text-align: center; }
