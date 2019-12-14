@@ -4,7 +4,7 @@ td#aboutMeData, td#imageMeData {border: 1px solid black;}
 .brBlk { border: 1px solid black; }
 .bgLb { background-color: lightblue; }
 .bgImg {background-image: url("../pics/uss-constitution_pic.jpg"); -moz-opacity:0.4; filter:alpha(opacity=40); opacity: 0.5;}
-div#aboutMeSection {width: 100%; text-align: center; -moz-opacity:0.0; filter:alpha(opacity=0); opacity: 0.0;}
+div#aboutMeSection {width: 100%; text-align: center; -moz-opacity:1.0; filter:alpha(opacity=100); opacity: 1.0;}
 td#aboutMeData, td#imageMeData {border: 1px solid black;}
 .brRed { border: 1px solid red; }
 h1, h3 {text-align: center;}
