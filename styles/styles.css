@@ -1,4 +1,4 @@
 body {background-color: lightblue;}
 div#aboutMeSection {width: 100%; text-align: center;}
-th#aboutMe, th#imageMe {border: 1px solid black;}
+td#aboutMeData, td#imageMeData {border: 1px solid black;}
 h1, h3 {text-align: center;}
