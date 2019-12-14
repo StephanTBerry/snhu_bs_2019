@@ -1,5 +1,5 @@
 body {background-color: lightblue;}
 div#aboutMeSection {width: 100%; text-align: center;}
 td#aboutMeData, td#imageMeData {border: 1px solid black;}
-td#aboutMeData > span {border: 1px solid red;}
+.brRed { border: 1px solid red; }
 h1, h3 {text-align: center;}
