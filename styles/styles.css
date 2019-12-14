@@ -1,4 +1,4 @@
 body {background-color: lightblue;}
 div#aboutMeSection {width: 100%; text-align: center;}
-th#aboutMe {border: 1px solid powderblue;}
+th#aboutMe, th#imageMe {border: 1px solid black;}
 h1, h3 {text-align: center;}
